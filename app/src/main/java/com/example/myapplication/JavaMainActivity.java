@@ -19,8 +19,8 @@ public class JavaMainActivity extends AppCompatActivity {
         TextView textView1 = findViewById(R.id.textView1);
         TextView textView2 = findViewById(R.id.textView2);
 
-        textView1.setText(mainScope.profileId());
-        textView2.setText(mainScope.postId());
+        textView1.setText(mainScope.controller().getProfileId());
+        textView2.setText(mainScope.controller().getPostId());
     }
 
 }

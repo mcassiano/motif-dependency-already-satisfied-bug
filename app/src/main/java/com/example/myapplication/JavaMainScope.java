@@ -2,6 +2,11 @@ package com.example.myapplication;
 
 @motif.Scope
 interface JavaMainScope {
-    String profileId();
-    String postId();
+
+    Controller controller();
+
+    @motif.Objects
+    abstract class Objects {
+        abstract Controller controller();
+    }
 }
